@@ -6,10 +6,13 @@ public class App {
 
     public static void main(String[] args) {
 
-        get("/", (request, response) -> "Hello 1");
+            staticFiles.location("/public");
+//        get("/", (request, response) -> "Hello 1");
 
         post("/greet", (request, response) -> "Hello 2");
+//        post("/webcamPage",);
     }
+
 
 
 
